@@ -96,5 +96,5 @@ puts reverse_upcase!(s)
 puts s
 
 #下記の様に変数名に!や?を入れるとエラーが出て使えない
-odd? = 1.odd?
-upcase! = 'ruby'.upcase!
+#odd? = 1.odd?
+#upcase! = 'ruby'.upcase!
