@@ -1,3 +1,4 @@
+#論理演算子(2.5.2)
 t1 = true
 t2 = true
 f1 = false
