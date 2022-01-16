@@ -38,3 +38,7 @@ puts m(c)
 #equal?メソッドを使って同じオブジェクトかどうか確認しても良い（trueなら同じオブジェクト）
 puts a.equal?(b)
 puts b.equal?(c)
+
+
+
+
