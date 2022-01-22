@@ -38,6 +38,21 @@ puts m(c)
 #equal?メソッドを使って同じオブジェクトかどうか確認しても良い（trueなら同じオブジェクト）
 puts a.equal?(b)
 puts b.equal?(c)
+#b、cは同じオブジェクト、aは異なるオブジェクト
+a = 'hello'
+b = 'hello'
+c = b
+# 渡された文字列を破壊的に大文字に変換するメソッドを定義する
+def m!(d)
+  d.upcase!
+end
+#cにm!メソッドを定義する
+m!(c)
+#b、cはいずれも大文字になる
+puts b
+puts c
+#aは別のオブジェクトなので大文字にならない
+puts a
 
 
 
