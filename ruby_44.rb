@@ -60,3 +60,53 @@ puts range.include?(5)
 puts range.include?(6)
 
 puts (1..5).include?(1)
+
+# 配列や文字列の一部を抜き出す(4.5.1)
+a = [1, 2, 3, 4, 5]
+# 2番目から4番目までの要素を取得する
+puts a[1..3]
+
+a = 'abcdefg'
+puts a[1..3]
+
+# n以上m以下、n以上m未満の判定をする
+#不等号を使う場合
+def liquid?(temprature)
+  #0度以上100度未満であれば液体、と判定したい
+  0 <= temprature && temprature < 100
+end
+puts liquid?(-1)
+puts liquid?(0)
+puts liquid?(99)
+puts liquid?(100)
+
+#範囲オブジェクトを使う場合
+def liquid?(temprature)
+  (0...100).include?(temprature)
+end
+puts liquid?(-1)
+puts liquid?(0)
+puts liquid?(99)
+puts liquid?(100)
+
+# case文で使う
+def charge(age)
+  case age
+  #0歳から5歳までの場合
+  when 0..5
+    0
+  #6歳から12歳までの場合
+  when 6..12
+    300
+  #13歳から18歳までの場合
+  when 13..18
+    600
+  #それ以外の場合
+  else
+    1000
+  end
+end
+puts charge(3)
+puts charge(12)
+puts charge(16)
+puts charge(25)
