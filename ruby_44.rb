@@ -69,7 +69,7 @@ puts a[1..3]
 a = 'abcdefg'
 puts a[1..3]
 
-# n以上m以下、n以上m未満の判定をする
+# n以上m以下、n以上m未満の判定をする(4.5.2)
 #不等号を使う場合
 def liquid?(temprature)
   #0度以上100度未満であれば液体、と判定したい
@@ -89,7 +89,7 @@ puts liquid?(0)
 puts liquid?(99)
 puts liquid?(100)
 
-# case文で使う
+# case文で使う(4.5.3)
 def charge(age)
   case age
   #0歳から5歳までの場合
@@ -110,3 +110,13 @@ puts charge(3)
 puts charge(12)
 puts charge(16)
 puts charge(25)
+
+# 値が連続する配列を作成する
+puts (1..5).to_a
+puts (1...5).to_a
+
+puts ('a'..'e').to_a
+puts ('a'...'e').to_a
+
+puts ('bad'..'bag').to_a
+puts ('bad'...'bag').to_a
