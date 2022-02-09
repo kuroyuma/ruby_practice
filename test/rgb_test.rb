@@ -8,3 +8,4 @@ class RgbTest < Minitest::Test
     assert_equal '#043c78', to_hex(4, 60, 120)
   end
 end
+
